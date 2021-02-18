@@ -9,20 +9,15 @@
 <h1>Test Page</h1>
 
 <script>
-console.log(location.hostname);
-console.log(document.referrer);
-  
-if (window == window.top) {
-  console.log('埋め込み要素');
-} else {
-  console.log('埋め込み要素じゃない');
-}
-  
-if (window.top === window.parent) {
-  console.log('最上位の親と同じ');
-} else {
-  console.log('最上位の親と同じじゃない');
-}
+  console.log(location.hostname);
+  console.log(document.referrer);
+
+  console.log('test 1');
+  console.log(window.frames.length);
+  console.log(parent.frames.length);
+
+  console.log('test 2');
+  console.log((window === window.parent) ? false : true);
 </script>
 </body>
 </html>
