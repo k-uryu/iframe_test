@@ -11,11 +11,7 @@
 <script>
 console.log(location.hostname);
 console.log(document.referrer);
-if (window.top) {
-  console.log('クロスドメインじゃない');
-} else {
-  console.log('クロスドメイン');
-}
+console.log(window.top.location);
 </script>
 </body>
 </html>
