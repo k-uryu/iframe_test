@@ -18,6 +18,15 @@
 
   console.log('test 2');
   console.log((window === window.parent) ? false : true);
+  
+  console.log('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
+  console.log('navigator.geolocationは利用');
+  if(navigator.geolocation){
+    console.log('できます！');
+  } else {
+    console.log('できません。。。。');
+  }
+  console.log('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
 </script>
 </body>
 </html>
