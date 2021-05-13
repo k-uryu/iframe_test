@@ -19,14 +19,11 @@
   console.log('test 2');
   console.log((window === window.parent) ? false : true);
 
-  console.log('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
-  console.log('navigator.geolocationは利用');
   if(navigator.geolocation){
-    console.log('できます！');
+    window.alert('navigator.geolocationは利用できます！');
   } else {
-    console.log('できません。。。。');
+    window.alert('navigator.geolocationは利用できません。');
   }
-  console.log('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
 </script>
 </body>
 </html>
