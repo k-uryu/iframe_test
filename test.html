@@ -9,20 +9,10 @@
 
 <h1>Test Page</h1>
 
-<div>
-  test
-</div>
+<div id="test"></div>
 
 <script>
-  console.log(location.hostname);
-  console.log(document.referrer);
-
-  console.log('test 1');
-  console.log(window.frames.length);
-  console.log(parent.frames.length);
-
-  console.log('test 2');
-  console.log((window === window.parent) ? false : true);
+  document.getElementById('test').innerHTML = (window == window.parent ? 'default' : 'iframe');
 </script>
 
 </body>
