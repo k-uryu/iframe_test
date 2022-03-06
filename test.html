@@ -15,6 +15,8 @@
 
 <script>
   document.getElementById('test').innerHTML = (window == window.parent ? 'default' : 'iframe');
+
+  console.log('referrer: ' + document.referrer);
 </script>
 
 </body>
