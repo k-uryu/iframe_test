@@ -2,16 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Test Page</title>
+<title>Iframe Page</title>
 </head>
 
 <body>
 
-<h1>Test Page</h1>
+<h1>Iframe Page</h1>
 
 <div id="test"></div>
-
-<iframe width="560" height="315" src="https://k-uryu.github.io/iframe_test/iframe.html"></iframe>
 
 <script>
   document.getElementById('test').innerHTML = (window == window.parent ? 'default' : 'iframe');
