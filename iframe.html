@@ -15,7 +15,7 @@
   document.getElementById('test').innerHTML = (window == window.parent ? 'default' : 'iframe');
 
   console.log('referrer: ' + document.referrer);
-  window.parent.postMessage({test: 'aaa'}, document.referrer);
+  window.parent.postMessage('test', document.referrer);
 </script>
 
 </body>
