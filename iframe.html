@@ -18,9 +18,11 @@
 
   console.log('referrer: ' + document.referrer);
 
-  window.parent.postMessage('test', '*');
   document.getElementById('postMessage').addEventListener('click', function (e) {
-    window.parent.postMessage('test', '*');
+    window.parent.postMessage('test', document.referrer);
+  });
+  window.addEventListener('message', function (event) {
+    console.log('test from iframe.');
   });
 </script>
 
