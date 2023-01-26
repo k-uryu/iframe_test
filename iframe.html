@@ -16,7 +16,9 @@
 <script>
   document.getElementById('test').innerHTML = (window == window.parent ? 'default' : 'iframe');
 
+  console.log('href: ' + location.href);
   console.log('referrer: ' + document.referrer);
+  console.log('cookie: ' + document.cookie);
 
   document.getElementById('postMessage').addEventListener('click', function (e) {
     window.parent.postMessage('test', document.referrer);
